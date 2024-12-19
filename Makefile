@@ -6,7 +6,7 @@
 #    By: bschneid <bschneid@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/10 14:26:33 by bschneid          #+#    #+#              #
-#    Updated: 2024/11/01 19:38:09 by bschneid         ###   ########.fr        #
+#    Updated: 2024/12/13 12:52:27 by bschneid         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,7 +58,7 @@ GIT_MUSIC	=	git clone https://github.com/mackron/miniaudio $(LIBMUSIC)
 
 OBJECTS		= $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SOURCES))
 OBJECTS_MU	= $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SOURCES_MU))
-FLAGS		= -Wall -Werror -Wextra -g3
+FLAGS		= -Wall -Werror -Wextra -g3 -O3
 
 all:	libmlx	$(NAME)
 
